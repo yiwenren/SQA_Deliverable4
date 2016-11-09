@@ -7,7 +7,7 @@ For the assignment 4 of Software Quality Assurance
 ### Refactored Method:
   (1)	MainPanel.convertToInt()
 	I delete most of the code in the original method, because finally the variable returned equals the variable passed to this method. So just returning x is enough.
-  ![sqa1](https://cloud.githubusercontent.com/assets/16570657/20158952/a444e8a8-a6ab-11e6-8787-eed35356a8dd.png)
+  </br>![sqa1](https://cloud.githubusercontent.com/assets/16570657/20158952/a444e8a8-a6ab-11e6-8787-eed35356a8dd.png)
   
   (2)	MainPanel.runContinuous()
 	I delete the for loop, because it is meaningless in this method. The variable _r in the end is totally the same with the value it was at the start. I remove the Thread.sleep(20), because it seems unnecessary.

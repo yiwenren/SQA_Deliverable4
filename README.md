@@ -1,10 +1,10 @@
 # SQA_Deliverable4
 For the assignment 4 of Software Quality Assurance
 
-### 1.	Summay
+## 1.	Summay
    I used visualVM to determine the methods to refactor (the screesshot is in part2). After I used the “write” mode firstly, then pressed “Run Continuous” button, I found out the MainPanel.convertToInt(), Cell.toString() and MainPanel.runContinuous() is the top 3 of the most CPU-intensive methods. So I decided to refactor them.
 
-- Refactored Method:
+### Refactored Method:
   (1)	MainPanel.convertToInt()</br>
 	I delete most of the code in the original method, because finally the variable returned equals the variable passed to this method. So just returning x is enough.
   </br>![sqa1](https://cloud.githubusercontent.com/assets/16570657/20158952/a444e8a8-a6ab-11e6-8787-eed35356a8dd.png)
@@ -18,7 +18,7 @@ For the assignment 4 of Software Quality Assurance
 	I delete the loop, because in the if statement, it just judges the first char of toReturn. And it is unnecessary to add currentState many times.<br>
 	![sqa3](https://cloud.githubusercontent.com/assets/16570657/20159223/4eeaa058-a6ad-11e6-919c-86243211c94b.png)</br>
 
-### 2.	Screenshots<br>
+## 2.	Screenshots<br>
    (1)	Before the factor</br>
    ![sqa4](https://cloud.githubusercontent.com/assets/16570657/20159278/9f436b8e-a6ad-11e6-9ec5-9e68bc281756.png)</br>
    (2)  After the method MainPanel.convertToInteger(int x) was modified, its performance is improved significantly.</br>

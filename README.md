@@ -2,7 +2,7 @@
 For the assignment 4 of Software Quality Assurance
 
 ### 1.	Summay
-	I used visualVM to determine the methods to refactor (the screesshot is in part2). After I used the “write” mode firstly, then pressed “Run Continuous” button, I found out the MainPanel.convertToInt(), Cell.toString() and MainPanel.runContinuous() is the top 3 of the most CPU-intensive methods. So I decided to refactor them.
+   I used visualVM to determine the methods to refactor (the screesshot is in part2). After I used the “write” mode firstly, then pressed “Run Continuous” button, I found out the MainPanel.convertToInt(), Cell.toString() and MainPanel.runContinuous() is the top 3 of the most CPU-intensive methods. So I decided to refactor them.
 
 Refactored Method:
   (1)	MainPanel.convertToInt()

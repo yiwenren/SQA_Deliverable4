@@ -2,7 +2,7 @@
 For the assignment 4 of Software Quality Assurance
 
 ## 1.	Summay
-   VisualVM is a troubleshooting tool which provides detailed information about Java applications while they are running on the Java Virutal Machine. In order to find out the methods which cause the slow-running of the application, I used visualVM to determine which methods to refactor (see screesshots in part2). I used the “write” mode, then pressed “Run Continuous” button. It showed in visualVM that the MainPanel.convertToInt(), Cell.toString() and MainPanel.runContinuous() were the top 3 of the most CPU-intensive methods. So I decided to refactor them to help the application run faster and smoother. 
+   VisualVM is a troubleshooting tool which provides detailed information about Java applications while they are running on the Java Virutal Machine. In order to find out the methods which consume CPU resources during the application operation, I used visualVM to determine which methods to refactor (see screesshots in part2). I used the “write” mode, then pressed “Run Continuous” button. It showed in visualVM that the MainPanel.convertToInt(), Cell.toString() and MainPanel.runContinuous() were the top 3 of the most CPU-intensive methods. So I decided to refactor them to help the application run faster and smoother. 
 
 ### Refactored Method:
   (1)	MainPanel.convertToInt()</br>
